@@ -17,7 +17,8 @@ const Card = (props) =>  {
           <h2 className="title">{props.title}</h2>
           <h3 className="author">{"by " + props.author}</h3>
           <p className="description">{props.description}</p>
-          <button className="betButton" onClick={updateCount} >👍 Bet Count: {count}</button>
+          <button className="betButton" onClick={updateCount} > {count}</button>
+          <Link to={'/detail/'+ props.id}><h1>More</h1></Link>
       </div>
   );
 };

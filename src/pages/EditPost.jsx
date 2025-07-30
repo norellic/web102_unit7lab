@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import './EditPost.css'
 import {supabase} from '../client.js'
 
-const EditPost = ({data}) => {
+const EditPost = () => {
 
     const updatePost = async (event) => {
         event.preventDefault()
@@ -56,7 +56,8 @@ const EditPost = ({data}) => {
                 </textarea>
                 <br/>
                 <input type="submit" value="Submit" onClick={updatePost}/>
-                <button className="deleteButton" onClick={deletePost}>Delete</button>
+                <button className="deleteButton"
+                onClick={deletePost}>Delete</button>
             </form>
         </div>
     )
