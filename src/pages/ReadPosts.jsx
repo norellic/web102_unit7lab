@@ -7,14 +7,12 @@ const ReadPosts = (props) => {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        //setPosts(props.data)
         const fetchPosts = async () => {
             const {data} = await supabase
             .from('Posts')
             .select()
             .order('created_at', { ascending: true })
 
-            // set state of posts
             setPosts(data)
         }
 
@@ -31,11 +29,11 @@ const ReadPosts = (props) => {
                     <Card 
                         key={post.id}
                         id={post.id} 
-                        title={post.title}
+                        name={post.name}
                         author={post.author}
                         description={post.description}
                     />
-                ) : <h2>{'No Challenges Yet 😞'}</h2>
+                ) : <h2>{'The party is elsewhere'}</h2>
             }
         </div>  
     )

@@ -21,14 +21,17 @@ const PostDetail = ({data}) => {
     }, [])
 
     const {id} = useParams()
-    const [post, setPost] = useState({id: null, title: "", author: "", description: ""})
+    const [post, setPost] = useState({id: null, name: "", author: "", description: ""})
     console.log(post);
 
     return (
-        <>
-        <h1>Post Detail</h1>
-        <p>{post.description}</p>
-        </>
+        <div className="whole_page">
+            <div className="page_content">
+            <h1>{post.name}</h1>
+            <h3>by {post.author} at {post.created_at}</h3>
+            <p>{post.description}</p>
+            </div>
+        </div>
     )
 
 }
