@@ -17,6 +17,10 @@ const DesignerForm = ({post, setPost, handleChange}) => {
                 <textarea rows="5" cols="50" id="description" name="description" value={post.description} onChange={handleChange} >
                 </textarea><br/>
                 <br/>
+                
+                <label htmlFor="image">Image:</label><br />
+                <input type="text" id="image" name="image" value={post.image} onChange={handleChange} /><br />
+                <br/>
 
                 <div className="expLvlMoney">
                     <label htmlFor="experience">Experience:</label><br />

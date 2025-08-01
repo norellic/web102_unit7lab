@@ -1,13 +1,21 @@
+.whole_page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px; 
+    padding: 20px;
+  }
+  
+  .whole_page img {
+    width: 400px; 
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .page_content {
+    flex: 1; /* This makes the text container take up all remaining space */
+  }
+
 p {
     color: white;
-}
-
-.description {
-    color:white;  
-    text-align: justify;
-    text-justify: inter-word;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 20px;
-    font-size: 15px;
 }

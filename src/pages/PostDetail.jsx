@@ -26,15 +26,16 @@ const PostDetail = ({data}) => {
 
     return (
         <div className="whole_page">
+            <img src={post.image} />
+
             <div className="page_content">
-            <h1>{post.name}</h1>
+            <h1 style={{ color: post.color }}>{post.name} the {post.class}</h1>
             <h3>by {post.author} at {post.created_at}</h3>
             <p>{post.description}</p>
-            <p>{post.exp}</p>
-            <p>{post.level}</p>
-            <p>{post.money}</p>
-            <p>{post.class}</p>
-
+            <p>Experience: {post.exp}</p>
+            <p>Level {post.level}</p>
+            <p>Money: ${post.money}.00</p>
+            <p></p>
             </div>
         </div>
     )

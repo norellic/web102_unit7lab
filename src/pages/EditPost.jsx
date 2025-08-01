@@ -27,7 +27,7 @@ const EditPost = () => {
 
         await supabase
         .from('Posts')
-        .update({ name: post.name, author: post.author,  description: post.description, exp: post.experience, level: post.level, money: post.money, color: post.color, class: post.class })
+        .update({ name: post.name, author: post.author,  description: post.description, exp: post.experience, level: post.level, money: post.money, color: post.color, class: post.class, image: post.image})
         .eq('id', id)
 
         window.location = "/";
@@ -45,11 +45,10 @@ const EditPost = () => {
     }
 
     const {id} = useParams()
-    const [post, setPost] = useState({name: "", author: "", description: "", exp: 0, level: 0, money: 0, color: "", class: "" })
+    const [post, setPost] = useState({name: "", author: "", description: "", exp: 0, level: 0, money: 0, color: "", class: "", image: "" })
 
     const handleChange = (event) => {
         const {name, value} = event.target
-        console.log(post)
         setPost( (prev) => {
             return {
                 ...prev,
