@@ -5,7 +5,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.962);
+  background-image: url('assets/forest background for codpath project 8.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding:20px;
   display: flex;
   flex-direction: row;

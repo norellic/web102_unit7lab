@@ -17,12 +17,22 @@ const DesignerForm = ({post, setPost, handleChange}) => {
                 </textarea>
                 <br/>
 
+                <label htmlFor="experience">Experience</label><br />
+                <input type="number" id="experience" name="experience" value={post.experience} onChange={handleChange}></input>
+
+                <label htmlFor="level">Level</label><br />
+                <input type="number" id="level" name="level" value={post.level} onChange={handleChange}></input>
+
+                <label htmlFor="money">Money</label><br />
+                <input type="number" id="money" name="money" value={post.money} onChange={handleChange}></input>
+
                 <label htmlFor="color">Color</label><br />
                 <input type="color" id="color" name="color" value={post.color} onChange={handleChange} /><br />
                 <br/>
 
-                <label htmlFor="experience">Experience</label><br />
-                <input type="number" id="experience" name="experience" value={post.experience} onChange={handleChange}></input>
+                <label htmlFor="class">Class</label><br />
+                <input type="number" id="class" name="class" value={post.class} onChange={handleChange}></input>
+
             </form>
         </div>
     )
