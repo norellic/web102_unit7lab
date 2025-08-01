@@ -13,14 +13,14 @@ const Card = (props) =>  {
   }
 
   return (
-      <div className="Card">
-        <Link to={'edit/'+ props.id}><img className="moreButton" alt="edit button" src={more} /></Link>
+      <div className="Card" >
+        <Link to={'edit/'+ props.id} ><img className="moreButton" alt="edit button" src={more} /></Link>
 
         <div className="cardContent">
-          <h2 className="name">{props.name}</h2>
+          <h2 className="name" style={{ color: props.color }}>{props.name}</h2>
           <h3 className="author">{"by " + props.author}</h3>
           
-          <div className="cardDetailsFooter">
+          <div className="cardDetailsFooter" >
             <Link to={'/detail/'+ props.id}><h3 className="seeDetails">See Details</h3></Link>
             <button className="likeButton" onClick={updateCount} > <img className="likeImg" alt="like button" src={like}/>{count}</button>
           </div>

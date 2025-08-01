@@ -31,7 +31,7 @@ const ReadPosts = (props) => {
                         id={post.id} 
                         name={post.name}
                         author={post.author}
-                        description={post.description}
+                        color={post.color}
                     />
                 ) : <h2>{'The party is elsewhere'}</h2>
             }

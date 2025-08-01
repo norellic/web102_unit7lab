@@ -30,6 +30,11 @@ const PostDetail = ({data}) => {
             <h1>{post.name}</h1>
             <h3>by {post.author} at {post.created_at}</h3>
             <p>{post.description}</p>
+            <p>{post.exp}</p>
+            <p>{post.level}</p>
+            <p>{post.money}</p>
+            <p>{post.class}</p>
+
             </div>
         </div>
     )
